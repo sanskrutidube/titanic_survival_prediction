@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Titanic Survival Prediction</title>
+</head>
+<body>
+	<html>
+   <body>
+    <center>
+      <img src="http://www.zastavki.com/pictures/1280x1024/2009/Ships_Titanic_014255_.jpg" width="auto" height="500px">
+    </center>
+   <header>
+   		<center>
+   			<h1>Titanic Disaster Survival Prediction</h1>
+   		</center>
+   </header>
+
+   <center>
+      <form action = "{{url_for('result')}}" method = "POST">
+
+      	<label for="pid"><b>PassengerId</b></label> <br><input type = "number" name = "pid" step="any"></p>
+
+      	<label for="name"><b>Name</b></label> <br><input type = "text" name = "name" step="any"></p>
+
+        <label for="sex">Sex:</label>
+			<select name="sex" id="sex">
+  				<option value="0">female</option>
+  				<option value="1">male</option>
+  			</select>
+  		</label>
+<br>
+         <p></p>
+         <p><label for="age"><b>Age</b></label> <br><input type = "number" name = "age" step="any"></p>
+<br>
+
+         <label for="sib">No of Siblings Aboard:</label>
+		<select name="sib" id="sib">
+  				<option value="0">0</option>
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+			</select>
+		</label>
+<br>
+<br>
+         <label for="parch">No of Parents of Children Aboard:</label>
+		<select name="parch" id="parch">
+  				<option value="0">0</option>
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+			</select>
+		</label>
+<br>
+<br>
+         <label for="pclass">Choose Passenger Class:</label>
+		<select name="pclass" id="pclass">
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+			</select>
+		</label>
+	
+<br>
+<br>
+        <label for="embark">Choose Embarkment Port:</label><br>
+			<input type="radio" value="S", name = 'embark'><label>Southampton</label><br>
+			<input type="radio" value="C", name = 'embark'><label>Cherbourg</label><br>
+			<input type="radio" value="Q", name = 'embark'><label>Queenstown</label><br>
+		</label>
+
+         <p><input type = "submit" value = "Predict" ></p>
+      </form>
+   </center>
+   </body>
+</html>
+</body>
+</html>
